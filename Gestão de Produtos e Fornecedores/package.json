@@ -1,0 +1,23 @@
+{
+  "name": "gestao-produtos-fornecedores",
+  "version": "1.0.0",
+  "description": "Aplicação para gestão de produtos e fornecedores com Node.js, Express, SQLite, EJS, Jest, Supertest e Cypress.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "jest",
+    "cypress": "cypress open"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "ejs": "^3.1.9",
+    "sqlite3": "^5.1.6"
+  },
+  "devDependencies": {
+    "jest": "^29.6.1",
+    "supertest": "^6.3.3",
+    "cypress": "^13.6.4"
+  }
+} 

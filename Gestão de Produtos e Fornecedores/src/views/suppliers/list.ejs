@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Fornecedores</title>
+</head>
+<body>
+  <h1>Fornecedores</h1>
+  <a href="/fornecedores/novo">Novo Fornecedor</a>
+  <ul>
+    <% suppliers.forEach(function(supplier) { %>
+      <li>
+        <a href="/fornecedores/<%= supplier.id %>"><%= supplier.name %></a> - <%= supplier.contact %>
+        <a href="/fornecedores/<%= supplier.id %>/editar">Editar</a>
+        <form action="/fornecedores/<%= supplier.id %>/delete" method="post" style="display:inline;">
+          <button type="submit">Excluir</button>
+        </form>
+      </li>
+    <% }) %>
+  </ul>
+  <a href="/">Voltar</a>
+</body>
+</html> 
